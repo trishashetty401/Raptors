@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a class="active" href="study.html">Study</a><a href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page">
+  <div class="page-heading">
+    <p class="eyebrow">YOUR MATERIAL</p>
+    <h1 id="subjectTitle">Your Study Session</h1>
+    <p id="notePreview"></p>
+  </div>
+
+  <section class="stats-row">
+    <div class="stat-card"><span>📚</span><b id="topicCount">0</b><small>Topics</small></div>
+    <div class="stat-card"><span>🃏</span><b id="cardCount">0</b><small>Flashcards</small></div>
+    <div class="stat-card"><span>🎯</span><b id="questionCount">0</b><small>Questions</small></div>
+    <div class="stat-card"><span>⭐</span><b id="xpValue">0</b><small>XP</small></div>
+  </section>
+
+  <section>
+    <div class="section-title"><h2>Topics detected</h2><span class="hint">Choose a topic to focus</span></div>
+    <div id="topics" class="topic-list"></div>
+  </section>
+
+  <section class="mode-grid">
+    <a class="mode-card" href="flashcards.html">
+      <span class="mode-icon">🃏</span><h3>Flashcards</h3><p>Review important concepts one card at a time.</p><b>Practice →</b>
+    </a>
+    <a class="mode-card" href="quiz.html">
+      <span class="mode-icon">🎯</span><h3>Quick Quiz</h3><p>Test yourself and find topics that need more practice.</p><b>Take Quiz →</b>
+    </a>
+    <a class="mode-card" href="teach.html">
+      <span class="mode-icon">🗣️</span><h3>Teach Back</h3><p>Explain a topic in your own words and check key concepts.</p><b>Try It →</b>
+    </a>
+  </section>
+
+  <div class="center"><a class="btn secondary" href="notes.html">＋ Add New Notes</a></div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/study.js"></script>
+</body>
+</html>
