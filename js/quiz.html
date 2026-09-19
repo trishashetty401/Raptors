@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a class="active" href="study.html">Study</a><a href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page narrow">
+  <div class="quiz-head">
+    <div><p class="eyebrow">QUIZ MODE</p><h1>Quick Quiz</h1></div>
+    <strong id="quizProgress">1 / 5</strong>
+  </div>
+  <div class="progress"><span id="quizBar"></span></div>
+
+  <section id="quizBox" class="panel quiz-panel">
+    <span id="questionTopic" class="tag">Topic</span>
+    <h2 id="questionText">Loading...</h2>
+    <div id="options" class="options"></div>
+    <p id="feedback" class="feedback"></p>
+    <button id="submitBtn" class="btn primary" disabled>Submit Answer</button>
+  </section>
+
+  <section id="resultBox" class="result-box hidden">
+    <div class="result-icon">🎉</div>
+    <h1>Quiz Complete!</h1>
+    <div class="big-score"><span id="finalScore">0</span>%</div>
+    <p id="scoreText"></p>
+    <div id="weakList" class="weak-list"></div>
+    <a class="btn primary" href="dashboard.html">View Progress →</a>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
