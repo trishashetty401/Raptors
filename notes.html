@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Notes - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a href="study.html">Study</a><a href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page narrow">
+  <div class="page-heading">
+    <p class="eyebrow">STEP 1</p>
+    <h1>Add your study material</h1>
+    <p>Paste your notes or upload a simple TXT file.</p>
+  </div>
+
+  <section class="panel">
+    <label for="fileInput" class="upload-box">
+      <span>📄</span>
+      <b>Upload .txt file</b>
+      <small>or click to choose a file</small>
+      <input id="fileInput" type="file" accept=".txt,text/plain">
+    </label>
+
+    <div class="or"><span>OR</span></div>
+
+    <label for="notesInput">Paste your notes</label>
+    <textarea id="notesInput" rows="14" placeholder="Example:
+The OSI model is a conceptual model used to understand network communication. It has seven layers: Physical, Data Link, Network, Transport, Session, Presentation and Application.
+
+The Network layer is responsible for routing packets between networks. The Transport layer provides end-to-end communication and can use TCP or UDP.
+
+TCP is connection-oriented and reliable. UDP is connectionless and faster but does not guarantee delivery."></textarea>
+
+    <div class="form-row">
+      <input id="subjectInput" type="text" placeholder="Subject name (e.g. Computer Networks)">
+      <button id="startBtn" class="btn primary">Start Revising →</button>
+    </div>
+    <p id="message" class="message"></p>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/notes.js"></script>
+</body>
+</html>
