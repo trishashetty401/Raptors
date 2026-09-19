@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teach Back - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a class="active" href="study.html">Study</a><a href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page narrow">
+  <div class="page-heading">
+    <p class="eyebrow">ACTIVE RECALL</p>
+    <h1>Teach Back 🗣️</h1>
+    <p>Explain a topic in your own words. ReviseX checks whether key concepts are included.</p>
+  </div>
+
+  <section class="panel">
+    <label for="teachTopic">Choose a topic</label>
+    <select id="teachTopic"></select>
+    <label for="teachAnswer">Your explanation</label>
+    <textarea id="teachAnswer" rows="10" placeholder="Explain the topic as if you are teaching it to a friend..."></textarea>
+    <button id="checkBtn" class="btn primary">Check My Explanation</button>
+    <div id="teachResult" class="teach-result hidden"></div>
+  </section>
+</main>
+<script src="js/data.js"></script>
+<script src="js/teach.js"></script>
+</body>
+</html>
