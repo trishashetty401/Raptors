@@ -97,7 +97,7 @@ The project is divided into different modules so that each team member contribut
 | Member                     | Contribution                                                         |
 | -------------------------- | -------------------------------------------------------------------- |
 | Dhanvi Keshava             | Notes input, file upload, topic extraction and study-data generation |
-| Trisha Durgaprasad Shetty | Flashcards and revision interaction                                  |
+| Trisha Durgaprasad Shetty | Flashcards and revision interaction                                   |
 | Bhavish Kulal              | Quiz, scoring and weak-topic tracking                                |
 | Karthik S Bhagwath         | Teach Back, dashboard and UI improvements                            |
 
