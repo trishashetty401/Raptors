@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a href="study.html">Study</a><a class="active" href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page">
+  <div class="page-heading">
+    <p class="eyebrow">YOUR PROGRESS</p>
+    <h1>Learning Dashboard</h1>
+    <p>Small practice sessions add up.</p>
+  </div>
+
+  <section class="dashboard-top">
+    <div class="xp-card">
+      <span>⭐</span><small>Total XP</small><strong id="dashXP">0</strong>
+    </div>
+    <div class="xp-card">
+      <span>🎯</span><small>Best Quiz</small><strong id="bestScore">0%</strong>
+    </div>
+    <div class="xp-card">
+      <span>🃏</span><small>Cards Reviewed</small><strong id="cardsReviewed">0</strong>
+    </div>
+    <div class="xp-card">
+      <span>🔥</span><small>Study Sessions</small><strong id="sessions">0</strong>
+    </div>
+  </section>
+
+  <section class="dashboard-grid">
+    <div class="panel">
+      <div class="section-title"><h2>Topic Progress</h2></div>
+      <div id="topicProgress"></div>
+    </div>
+    <div class="panel">
+      <div class="section-title"><h2>⚠️ Needs Revision</h2></div>
+      <div id="weakTopics"></div>
+    </div>
+  </section>
+
+  <section class="revision-mission">
+    <div>
+      <p class="eyebrow">TODAY'S MISSION</p>
+      <h2 id="missionTitle">Complete a quick quiz</h2>
+      <p id="missionText">Practice your notes to earn XP and improve weak topics.</p>
+    </div>
+    <a class="btn primary" href="quiz.html">Start Mission →</a>
+  </section>
+
+  <div class="center"><button id="resetBtn" class="text-btn">Reset demo progress</button></div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
