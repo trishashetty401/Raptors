@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcards - ReviseX</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="logo" href="index.html">Revise<span>X</span></a>
+  <nav><a class="active" href="study.html">Study</a><a href="dashboard.html">Progress</a></nav>
+</header>
+
+<main class="page narrow">
+  <div class="page-heading compact">
+    <p class="eyebrow">PRACTICE MODE</p>
+    <h1>Flashcards</h1>
+    <p id="cardTopic"></p>
+  </div>
+
+  <div class="flash-wrap">
+    <div id="flashcard" class="flashcard">
+      <div class="card-label">QUESTION</div>
+      <h2 id="cardQuestion">Loading...</h2>
+      <button id="showAnswer" class="btn secondary">Show Answer</button>
+      <div id="answerBox" class="answer-box hidden">
+        <div class="card-label">ANSWER</div>
+        <p id="cardAnswer"></p>
+      </div>
+    </div>
+    <div class="card-counter"><span id="cardNumber">1</span> / <span id="totalCards">0</span></div>
+    <div class="rating-row">
+      <button class="rate again" data-rate="again">↻ Again</button>
+      <button class="rate hard" data-rate="hard">😐 Hard</button>
+      <button class="rate easy" data-rate="easy">😊 Easy</button>
+    </div>
+    <button id="nextCard" class="btn primary">Next Card →</button>
+  </div>
+</main>
+<script src="js/data.js"></script>
+<script src="js/flashcards.js"></script>
+</body>
+</html>
